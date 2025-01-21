@@ -1,26 +1,27 @@
 {
   "name": "dell-ds-clone",
   "private": false,
-  "version": "0.0.3-1",
+  "license": "MIT",
+  "version": "0.0.3-2",
   "type": "module",
-  "files": [
-    "dist"
-  ],
-  "module": "./dist/index.js",
   "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
       "require": "./dist/index.umd.cjs",
+      "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
     "./dist/style.css": "./dist/style.css",
     "./package.json": "./package.json",
     "./dist/*": "./dist/*"
   },
+  "files": [
+    "dist"
+  ],
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "*.{ts,tsx}": "prettier --write --ignore-unknown"
   },
   "scripts": {
     "dev": "vite",
@@ -52,6 +53,7 @@
     "lint-staged": "^15.4.1",
     "postcss": "^8.5.1",
     "prettier": "3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rimraf": "^6.0.1",
@@ -60,9 +62,7 @@
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5",
     "vite-plugin-checker": "^0.8.0",
-    "vite-plugin-dts": "^4.5.0"
-  },
-  "dependencies": {
+    "vite-plugin-dts": "^4.5.0",
     "tailwind-variants": "^0.3.1"
   }
 }

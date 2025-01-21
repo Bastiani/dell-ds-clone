@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-import theme from "./lib/theme";
+import theme from './lib/theme'
 
 export default {
-  content: ["./index.html", "./src/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
+  content: ['./index.html', './src/**/*.{ts,tsx}', './lib/**/*.{ts,tsx}'],
   theme: {
-    ...theme,
+    extend: { ...theme }
   },
-  plugins: [],
-};
+  plugins: []
+}

@@ -1,3 +1,7 @@
 # Ignore artifacts:
+.idea
 build
+dist
 coverage
+node_modules
+yarn-error.log
