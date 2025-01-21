@@ -2,7 +2,7 @@
   "name": "dell-ds-clone",
   "private": false,
   "license": "MIT",
-  "version": "0.0.3-2",
+  "version": "0.0.3-4",
   "type": "module",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",

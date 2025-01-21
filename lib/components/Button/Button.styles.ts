@@ -8,9 +8,7 @@ export const variants = tv({
     'font-medium',
     'transition-all',
     'duration-200',
-    'disabled:bg-grey-200',
-    'disabled:stroke-grey-400',
-    'disabled:text-grey-400',
+    'disabled:opacity-40',
     'disabled:cursor-not-allowed',
     'text-white'
   ],
